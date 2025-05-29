@@ -15,7 +15,6 @@ This project demonstrates a full SQL-based data cleaning and EDA pipeline using 
 ## 🔧 Tools Used
 
 - MySQL
-- SQL CTEs, `ROW_NUMBER()`, `STR_TO_DATE()`, `GROUP BY`, `DENSE_RANK()`
 
 ## 🧹 Cleaning Highlights
 
@@ -33,4 +32,4 @@ This project demonstrates a full SQL-based data cleaning and EDA pipeline using 
 
 ## 🎯 Goal
 
-To showcase strong foundational SQL skills in both **data preparation** and **analysis**, applicable to data analyst and BI-focused roles.
+To showcase strong foundational SQL skills in both **data preparation** and **analysis**, applicable to data analyst, data scientist, and BI-focused roles.
