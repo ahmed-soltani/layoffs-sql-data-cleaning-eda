@@ -1,39 +1,36 @@
 # SQL Layoffs Dataset – Data Cleaning & Exploratory Analysis
 
-This project showcases a complete data cleaning and exploratory data analysis (EDA) pipeline using SQL on a real-world dataset of layoffs.
+This project demonstrates a full SQL-based data cleaning and EDA pipeline using a real-world layoffs dataset. It showcases practical SQL techniques to prepare data for analysis and uncover insights into mass layoffs across industries, countries, and funding stages.
 
 ## 📁 Project Structure
 
-- `data/` – Contains the raw dataset used in this project (`layoffs.csv`).
-- `cleaning/` – Step-by-step SQL scripts for cleaning the data:
-  - Handling null and blank values
-  - Removing duplicates
-  - Dropping unnecessary columns and rows
-  - Standardizing data formats
-- `eda/` – Contains the EDA SQL script exploring trends and insights from the cleaned dataset.
+- `data/` – Contains the raw dataset (`layoffs.csv`)
+- `cleaning/` – Step-by-step cleaning scripts:
+  - `remove_duplicates.sql`
+  - `standardize_data.sql`
+  - `null_blank_values.sql`
+  - `remove_unnecessary_cols_rows.sql`
+- `eda/` – Contains `EDA.sql` with queries for time trends, industry impact, rolling totals, and rankings.
 
-## 🛠️ Tools Used
+## 🔧 Tools Used
 
 - MySQL
-- SQL (standard ANSI)
-- Excel (for initial preview)
+- SQL CTEs, `ROW_NUMBER()`, `STR_TO_DATE()`, `GROUP BY`, `DENSE_RANK()`
 
-## 🧹 Data Cleaning Highlights
+## 🧹 Cleaning Highlights
 
-- Removed exact and near duplicates
-- Replaced or handled NULLs and blank strings
-- Standardized date and text fields for consistency
-- Removed irrelevant or redundant columns and rows
+- Removed duplicate entries using window functions
+- Standardized inconsistent text values and converted date formats
+- Filled or removed null and blank values responsibly
+- Prepared clean dataset for analysis
 
 ## 📊 EDA Highlights
 
-- Identified layoffs distribution across time, location, and industries
-- Explored correlations between company size, funding stage, and layoff patterns
-- Used `GROUP BY`, `CASE WHEN`, and `JOINs` to derive insights
+- Identified the most affected companies, industries, and countries
+- Analyzed temporal patterns of layoffs (yearly, monthly, rolling totals)
+- Explored correlations with funding stages and time
+- Ranked companies per year by layoff count using `DENSE_RANK()`
 
-## 📌 Motivation
+## 🎯 Goal
 
-This project was created to demonstrate practical SQL skills in real-world data preparation and analysis workflows, useful in data analyst and BI roles.
-
----
-
+To showcase strong foundational SQL skills in both **data preparation** and **analysis**, applicable to data analyst and BI-focused roles.
